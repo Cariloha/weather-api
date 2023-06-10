@@ -1,0 +1,212 @@
+body {
+    background: #fffff8;
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(23,55,83);
+    background: linear-gradient(90deg, rgba(109,174,219,0.5) 30%, rgba(40,146,215,0.5) 100%); 
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+#app {
+    display: grid;
+    color: #3b4a6b;
+    grid-template-columns: minmax(150px, auto);
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 40px;
+}
+
+.holder, .data, .generate-btn {
+    grid-column: 1/-1;
+}
+
+.headline {
+    grid-row: 1/2;
+}
+
+.data {
+    grid-row: 2/3;
+}
+
+.feel {
+    grid-row: 3/4;
+}
+
+.generate-btn {
+    grid-row: 4/5;
+}
+
+.entry {
+    grid-row: 5/6;
+}
+
+
+.d-flex {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.country, .zip {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .country, .zip {
+        flex-basis: calc(50% - 32px);
+    }
+}
+
+.entry {
+    background: rgba(59, 74, 107, .4);
+    padding: 24px;
+}
+
+.temp {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.temp p {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .temp p {
+    flex-basis: calc(50% - 32px);
+}
+}
+
+
+.date {
+    margin-bottom: 16px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+h1 {
+    font-size: 40px;
+    font-family: 'Happy Monkey', cursive;
+}
+
+h2, .title {
+    font-size: 32px;
+    font-family: 'Happy Monkey', cursive;
+    color: white;
+    margin-bottom: 24px;
+}
+
+label {
+    display:block;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 16px;
+}
+
+select {
+    background: #6EA4BF;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    height: 62px;
+    padding-left: 16px;
+}
+
+input {
+    display:block;
+    height: 60px;
+    width: 320px;
+    background: #6EA4BF;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    padding-left: 16px;
+}
+
+label, select, input, textarea {
+    width: 100%;
+    font-size: 24px;
+}
+
+button{
+    width: 400px;
+    max-width: 100%;
+    height: 100px;
+    background: #3b4a6b;
+    color: white;
+    font-size: 32px;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: #3b4a6b;
+
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+textarea{
+    background: #6EA4BF;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    padding: 16px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+} 
+
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+} 
